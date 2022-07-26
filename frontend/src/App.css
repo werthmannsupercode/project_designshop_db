@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap');
+
+/* font-family: 'Karla', sans-serif; */
+
+/* Farbe: #323A45 / #848484 */
+
+/* ==========================================================================
+                    GENERAL STYLES
+========================================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: 'Karla', sans-serif;
+}
+
+body {
+  padding: 0 10vw;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* ==========================================================================
+                    NAV STYLES
+========================================================================= */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6vh 0;
+  position: relative;
+}
+
+nav a h1 {
+  font-size: 2.2rem;
+  color: #323A45;
+}
+
+nav div {
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav div a,
+nav div p {
+  color: #323A45;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+#burger {
+  font-size: 3rem;
+  position: absolute;
+  top: 6vh;
+  right: -110%;
+}
+
+#mobile {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  align-items: space-around;
+  justify-content: space-around;
+  background-color: white;
+  padding-left: 10vw;
+  padding-bottom: 10vh;
+  transition: 0.5s linear;
+}
+
+#mobile p {
+  text-align: right;
+}
+
+/* ==========================================================================
+                    MAIN STYLES
+========================================================================= */
+
+.shoplist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.shoplist li a img {
+  height: 85%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.shoplist li a {
+  text-decoration: none;
+}
+
+.shoplist li div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+h2 {
+  color: #323A45;
+  font-size: 1.6rem;
+  padding-top: 10px;
+}
+
+p {
+  color: #848484;
+  font-size: 1.6rem;
+  padding-top: 5px;
+}
+
+.shoplist li:nth-of-type(1) {
+  grid-column: 1/4;
+}
+
+
+.shoplist li:nth-of-type(8) {
+  grid-column: 1/4;
+}
+
+.shoplist li:nth-of-type(15) {
+  grid-column: 1/4;
+}
+
+.shoplist li:nth-of-type(22) {
+  grid-column: 1/4;
+  grid-row: 10/11;
+}
+
+.shoplist li:nth-of-type(29) {
+  grid-column: 1/4;
+  grid-row: 13/14;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.table td,
+.table th {
+  text-align: left;
+  padding: 8px;
+}
+
+.table tbody:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.productLinkTable {
+  width: 30%;
+}
+
+.linkShopTable {
+  width: 15%;
+}
+
+/* ==========================================================================
+                    FOOTER STYLES
+========================================================================= */
+
+footer article {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+footer article section {
+  display: flex;
+  flex-direction: column;
+}
+
+footer article section a:nth-child(1) {
+  color: #323A45;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+footer article section:nth-of-type(1) {
+  width: 33%;
+}
+
+footer article section:nth-of-type(1) p {
+  color: #323A45;
+  font-size: 1.6rem;
+  margin-top: 20px;
+  padding-right: 70px;
+  line-height: 1.5;
+}
+
+footer article section:nth-of-type(2) {
+  width: 15%;
+}
+
+footer article section:nth-of-type(2) a:nth-of-type(2),
+footer article section:nth-of-type(2) a:nth-of-type(3) {
+  color: #323A45;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+footer article section:nth-of-type(2) a:nth-of-type(2) {
+  margin-top: 20px;
+}
+
+footer article section:nth-of-type(3) {
+  width: 18%;
+}
+
+footer article section:nth-of-type(3) p {
+  color: #323A45;
+  font-size: 1.6rem;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+footer article section:nth-of-type(3) p a {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+footer article section:nth-of-type(3) p:nth-of-type(2) {
+  margin: 0;
+  font-style: italic;
+}
+
+footer article section:nth-of-type(4) {
+  width: 33%;
+  padding-left: 80px;
+}
+
+footer article section:nth-of-type(4) a:nth-of-type(2),
+footer article section:nth-of-type(4) a:nth-of-type(3),
+footer article section:nth-of-type(4) a:nth-of-type(4) {
+  color: #323A45;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+footer article section:nth-of-type(4) a:nth-of-type(2) {
+  margin-top: 20px;
+}
+
+footer span {
+  color: #848484;
+  font-size: 1.6rem;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  display: block;
+
+}
