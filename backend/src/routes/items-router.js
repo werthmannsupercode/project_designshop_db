@@ -23,7 +23,7 @@ itemsRouter.post("/addnewitemtoshop", (req, res) => {
     const newItem = {
         ProductName: req.body.productname,
         Company: req.body.company,
-        Price: req.body.price,
+        Price: "$" + req.body.price,
         ProductLink: req.body.productlink,
         LinkShop: req.body.linkshop
     }
